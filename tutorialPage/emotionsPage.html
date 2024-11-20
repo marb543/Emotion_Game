@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Card Game</title>
+    <link rel="stylesheet" href="./emotionsPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="homepage-information-learning">
+        <div class="background"></div>
+        <div class="text-container">
+            <div class="the-emotion-wheel">The Emotion Wheel</div>
+            <div class="click-on-one-of-the-emotion-to-learn-more-about-it">
+                Click on one of the emotions to learn more about it!
+            </div>
+            <a onclick="redirectToStartPage()" class="start-button">Start Playing</a>
+        </div>
+        <img class="image-wheel" src="./assets/emotionWheel.png" alt="Emotion Wheel" onclick="openPopup()">
+    </div>
+
+    <!-- Emotion Popup -->
+    <div class="popup" id="emotionPopup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">Close</button>
+            <div class="emotion-description" id="emotionDescription"></div>
+            <img id="emotionImage" src="" alt="Emotion Image" class="emotion-image">
+            <button class="prev-btn" onclick="changeEmotion(-1)">&#8592; Prev</button>
+            <button class="next-btn" onclick="changeEmotion(1)">Next &#8594;</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="./emotionsPage.js"></script>
+</body>
+
+</html>

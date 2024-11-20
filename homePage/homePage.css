@@ -1,0 +1,89 @@
+/* Reset styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #dddddd;
+    /* Background color for the body */
+    font-family: 'Jua', sans-serif;
+}
+
+/* Container for the whole page */
+.homepage-information-learning {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* Limit the width for large screens */
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Full-screen background */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #dddddd;
+}
+
+/* Content section */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Title styling */
+.emotion-explorer {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Button groups */
+.group {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.rectangle-10,
+.rectangle-102 {
+    width: 100%;
+    height: 60px;
+    border-radius: 50px;
+    background: #fe814b;
+}
+
+.start-tutorial,
+.about-this-game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Subtitle */
+.understanding-emotions-one-step-at-a-time {
+    font-size: 1.2rem;
+    color: #473b36;
+    margin-top: 10px;
+}

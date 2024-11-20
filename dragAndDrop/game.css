@@ -1,0 +1,212 @@
+body {
+    font-family: "Jua", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #FFF;
+}
+
+.game-container {
+    display: flex;
+    width: 72.5rem;
+    height: 47.625rem;
+    border-radius: 2.25rem;
+    border: 4px solid #3908ff;
+    background: #00fbff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Left and right box styling */
+.left-box,
+.right-box {
+    flex: 0.5;
+    background: #FFF;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.left-box {
+    border-radius: 2.25rem;
+
+}
+
+.right-box {
+    flex-direction: column;
+    border-radius: 2.25rem;
+
+    gap: 1.5rem;
+    text-align: center;
+    /* Center content horizontally */
+}
+
+/* Right box button styling */
+.right-box button {
+    width: 12rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #3908ff;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.right-box button:hover {
+    background-color: #2805cc;
+    transform: scale(1.05);
+
+}
+
+.right-box button:active {
+    transform: scale(0.95);
+}
+
+.game-info {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+/* Score and Timer text styling */
+#score,
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3908ff;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 0;
+}
+
+/* Prompt container styling */
+#prompt-container {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#feature-buttons {
+    display: block;
+    flex-direction: column;
+    /* Arrange buttons vertically */
+    align-items: center;
+    gap: 3rem;
+    /* Larger space between buttons */
+    margin-top: 2rem;
+    /* Add space above buttons */
+}
+
+#feature-buttons button {
+    width: 14rem;
+    /* Make buttons wider */
+    padding: 1.25rem;
+    /* Increase padding for height */
+    font-size: 1.5rem;
+    /* Larger text */
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    /* Gradient background */
+    border: none;
+    border-radius: 1rem;
+    /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease-in-out;
+    margin-bottom: 2rem;
+    /* Add additional margin below each button */
+}
+
+#feature-buttons button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    /* Reverse gradient on hover */
+    transform: scale(0.9);
+    /* Slightly increase size */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow */
+}
+
+#feature-buttons button:active {
+    transform: scale(0.98);
+    /* Slightly reduce size on click */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    /* Reduced shadow on click */
+}
+
+/* Avatar display container */
+.avatar-display {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    background-color: #FFF;
+    padding: 10px;
+}
+
+/* Base face styling */
+#face-base {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/* Feature positions (adjust based on the alignment with base face) */
+#eyes {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+}
+
+#nose {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+}
+
+#mouth {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+}
+
+.go-back-button {
+    background-color: #e96e42;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Jua', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: background-color 0.3s ease;
+}

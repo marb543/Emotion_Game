@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #239683;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-information-learning {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* Background */
+.background {
+  background: #dddddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Centered Image */
+.image-4 {
+  position: absolute;
+  width: 35%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Placeholder Character */
+.placeholdercharaemo-1 {
+  width: 388px;
+  height: 817px;
+  position: absolute;
+  left: 766px;
+  top: 132px;
+  object-fit: cover;
+}
+
+/* Rectangle */
+.rectangle-17 {
+  background: rgba(212, 212, 212, 0.9);
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #747474;
+  border-width: 8px;
+  width: 1642px;
+  height: 310px;
+  position: absolute;
+  left: 143px;
+  top: 699px;
+}
+
+/* Polygon */
+.polygon-1 {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: 1711px;
+  top: 961px;
+  transform: translate(-80.32px, -67.5px);
+  background: #747474;
+  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+.oh-hello-there {
+  color: #473b36;
+  text-align: left;
+  font-family: 'Jua', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  position: absolute;
+  left: 224px;
+  top: 750px;
+}

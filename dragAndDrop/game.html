@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Avatar Builder</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button class="go-back-button">Go Back</button>
+    <div class="game-container">
+        <div class="left-box">
+            <div class="avatar-display">
+                <img id="face-base" src="images/base-face.png" alt="Base Face">
+                <img id="eyes" src="images/eyes-neutral.png" alt="Eyes">
+                <img id="nose" src="images/nose-neutral.png" alt="Nose">
+                <img id="mouth" src="images/mouth-neutral.png" alt="Mouth">
+            </div>
+
+        </div>
+
+
+
+        <div class="right-box">
+
+            <div id="prompt-container">
+                <div id="story-prompt" class="prompt-text">George is happy today. Let's understand how he can express
+                    his happiness?</div>
+                <button id="start-button" class="start-button">Start</button>
+            </div>
+
+            <div class="game-info">
+                <p id="score">Score: 0</p>
+                <p id="timer">Time Left: 15s</p>
+            </div>
+            <!-- Content for the right box (e.g., expression options) -->
+            <div id="feature-buttons" style="display:none;">
+                <button onclick="changeFeature('eyes')">Change Eyes</button>
+                <button onclick="changeFeature('nose')">Change Nose</button>
+                <button onclick="changeFeature('mouth')">Change Mouth</button>
+                <button onclick="checkMatch()">Check Answer</button>
+            </div>
+        </div>
+
+        <!-- Audio elements for sounds -->
+        <audio id="correct-sound" src="Sounds/correct.wav"></audio>
+        <audio id="incorrect-sound" src="Sounds/incorrect.wav"></audio>
+
+
+
+    </div>
+
+
+
+    <script src="game.js"></script>
+</body>
+
+</html>
